@@ -231,8 +231,8 @@ ${orderYaml}
       calendarView: "timeGridWeek"
       customDayCount: 3
       firstDay: 0
-      slotMinTime: "06:00:00"
-      slotMaxTime: "22:00:00"
+      slotMinTime: "${settings.calendarViewSettings.slotMinTime}"
+      slotMaxTime: "${settings.calendarViewSettings.slotMaxTime}"
       slotDuration: "00:30:00"
 `;
 
@@ -356,8 +356,8 @@ export const DEFAULT_BASES_FILES: Record<string, string> = {
       calendarView: "timeGridWeek"
       customDayCount: 3
       firstDay: 0
-      slotMinTime: "06:00:00"
-      slotMaxTime: "22:00:00"
+      slotMinTime: "00:00:00"
+      slotMaxTime: "24:00:00"
       slotDuration: "00:30:00"
 `,
 
